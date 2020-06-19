@@ -25,12 +25,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle="LEANDRO RODRIGUES" />
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          
+          padding: `0 0rem 0rem`,
         }}
       >
         <main>{children}</main>
