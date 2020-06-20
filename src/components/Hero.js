@@ -3,10 +3,13 @@ import styled from 'styled-components'
 import foto from '../images/leandro.png'
 import logo from '../images/leandro-logo.png'
 import Container from '../components/container'
+import Slide from '../components/slide'
 
 const Section = styled.section`
 height:auto;
-padding-bottom:10%;
+padding-bottom:50px;
+padding-top:150px;
+
 `
 const BoxRigth = styled.div`
     
@@ -115,25 +118,8 @@ function Hero() {
     return (
         <Container>
             <Section>
-
-            <BoxLeft>
-                <Title>
-                   DESENVOLVIMENTO DE SISTEMAS E WEB SITES
-                </Title>
-
-                <Texto2>
-                    Olá, seu negócio tem algum gargalo que pode ser resolvido com tecnologia?
-                    Seu negócio está na internet?
-                </Texto2>
-
-                <div class=" buttonBox d-inline">
-                   
-                </div>
-            </BoxLeft>
-
-            <BoxRigth>
-            <Logo src={logo} alt="Fotografia do desenvolvedor" />
-            </BoxRigth>
+                <Slide></Slide>
+           
 
         </Section>
         </Container>
