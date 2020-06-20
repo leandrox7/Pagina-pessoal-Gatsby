@@ -6,13 +6,11 @@ padding-bottom:100px;
 
 `
 const Center = styled.div`
-margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     width: 600px;
     text-align:center;
     `
-
-
 const Title = styled.h2`
 
 padding-bottom: 20px;
