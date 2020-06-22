@@ -3,13 +3,9 @@ import styled from 'styled-components'
 import image1 from '../images/slide1.png'
 import image2 from '../images/slide2.png'
 import image3 from '../images/logo-grande.png'
+import  './slide.css'
 import { Slide } from 'react-slideshow-image';
- 
-const slideImages = [
-    '../images/slide1.png',
-    '/images/slide2.png',
-    '../images/slide2.png'
-];
+
  
 const properties = {
   duration: 5000,
@@ -24,8 +20,12 @@ const properties = {
 }
  
 const Slideshow = () => {
+  function componetDidMount(){
+    
+  }
     return (
       <div className="slide-container">
+       
         <Slide {...properties}>
           <div className="each-slide">
           <Image src={image1}></Image>
