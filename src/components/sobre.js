@@ -80,13 +80,13 @@ margin-top: 20px;
   color: #707070;
   font-family: 'Segoe UI';
   font-style: black;
-  font-size:16px ;  
+  font-size:17px ;  
 
   padding-left: 5%;
   padding-right: 5%;
   text-align: left;
   text-align: justify;
-  text-justify: inter-word;
+
   `
 const Texto3 = styled.div`
   color: #707070;
