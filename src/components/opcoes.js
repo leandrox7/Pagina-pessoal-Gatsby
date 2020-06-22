@@ -61,7 +61,7 @@ function opcoes() {
 
     return (
 
-        <Section>
+        <Section name='tecnologia'>
 
             <Container>
 <Center>

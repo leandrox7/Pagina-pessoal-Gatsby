@@ -5,17 +5,29 @@ import styled from 'styled-components'
 import logo from '../images/LogoAzul.png'
 import Container from '../components/container'
 
+
 const Navbar = styled.header`
 position:fixed;
 background-color:white;
-width:100%
+width:100%;
+z-index: 20;
 `
+const Line = styled.div`
+        content: '';
+        
+        margin-left:auto;
+        margin-right:auto;
+        width: 100%;
+        height: 1px;
+        background-image: linear-gradient(to right, #4527C2,#16DAE1,#663399);
+    `
 const BoxL = styled.div`
 display:inline-block;
 width:20%;
 background-color:none;
 `
 const BoxR = styled.div`
+scroll-behavior: smooth;
 display:inline-block;
 width:80%;
 height: 123px;
@@ -24,8 +36,8 @@ padding-top:50px;
 padding-left:50px;
 background-color:none;
 `
-
-const Text = styled.span`
+const Text = styled.a`
+text-decoration:none;
   color: #707070;
   font-family: 'Segoe UI';
   font-style: black;
@@ -47,12 +59,15 @@ const Header = ({ siteTitle }) => (
         <Imagem src={logo}></Imagem>
       </BoxL>
       <BoxR>
-        <Text>Home</Text>
-        <Text>Tecnologia</Text>
-        <Text>Sobre</Text>
-        <Text>Contato</Text>
+      <Link to="/"><Text href='#home'>Home</Text></Link>
+        
+        <Text href='#tecnologia'>Tecnologia</Text>
+        <Text href='#sobre'>Sobre</Text>
+        <Link to="/contato"><Text>Contato</Text></Link>
       </BoxR>
+     
     </Container>
+    <Line/>
   </Navbar>
 )
 

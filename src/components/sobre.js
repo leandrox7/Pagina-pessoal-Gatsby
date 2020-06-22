@@ -101,7 +101,7 @@ function sobre() {
 
     return (
 
-        <Section>
+        <Section  name='sobre'>
 
             <Container>
 <Center>

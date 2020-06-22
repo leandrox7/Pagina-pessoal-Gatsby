@@ -88,18 +88,16 @@ function Solucoes() {
 
             <BoxLeft>
                 <Texto1>
-                    QUE TIPO DE SOLUÇÃO O
-                    SEU NEGÓCIO PRECISA?
+                    VOCÊ PRECISA DE UM SITE?
                      </Texto1>
 
                 <Texto2>
-                    As Principais Soluções Empresariais, com as tecnologias
-                    mais sólidas da atualidade. seu sistema sempre acessível
-                    nas plataformas web e mobile.
-                            <br /><br /><br />
-                            As Principais Soluções Empresariais, com as tecnologias
-                            mais sólidas da atualidade. seu sistema sempre acessível
-                            nas plataformas web e mobile
+                    Não estar na internet é estar um passo atrás dos seus concorrentes.
+                    Em um mundo cada vez mais conectado é fundamental poder ser encontrado
+                    de forma facíl e rápida pelo seu publico alvo.
+                    <br /><br /><br />
+                   Trabalho para potencializar seus negócios de forma rápida e financeiramente viável.
+                   Tudo isso sem abrir mão da qualidade e das melhores tecnoligias disponíveis no mercado.
                             
                      </Texto2>
 

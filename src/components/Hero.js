@@ -106,25 +106,33 @@ const Texto4 = styled.div`
     margin-top:10px;
     max-width: 300vw;
 `
-
 const Logo = styled.img`
     margin-top:15vh;
     
 `
+function teste(){
+    if (typeof window !== `undefined`)
+                         {
+                           return <Slide></Slide>
+                         }
+                        
+}
 
 
 function Hero() {
 
     return (
-        <Container>
-            <Section>
-                <Slide></Slide>
+       
+            <Section name='home'>
+                 <Container>
+                    
+                       { teste()}
+                    
+               
            
-
+                </Container>
         </Section>
-        </Container>
-        
-
+    
     )
 
 }
