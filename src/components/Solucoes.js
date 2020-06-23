@@ -3,11 +3,6 @@ import styled from 'styled-components'
 import background from '../images/solucoes.jpg'
 import Container from '../components/container'
 
-import logo1 from '../images/mysql.jpg'
-import logo2 from '../images/nodejs_logo.png'
-import logo3 from '../images/react.png'
-import logo4 from '../images/c#.png'
-import logo5 from '../images/logo.png'
 
 const Section = styled.section`
 width: 100%;
