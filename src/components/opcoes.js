@@ -1,6 +1,5 @@
 import React from "react"
 import styled from 'styled-components'
-import foto from '../images/leandro.png'
 import Container from '../components/container'
 
 const Section = styled.section`
@@ -46,9 +45,6 @@ font-size: 18px;
     margin-bottom: 12px;
     padding: 0 3px;
     text-align:justify;`
-const Span = styled.span`
-    font-size: 14px;
-    color: #999;`
 const Center = styled.div`
 margin-left: auto;
 margin-right: auto;
@@ -91,7 +87,7 @@ function opcoes() {
                     <Strong>SISTEMAS</Strong>
                     <P>Ter um sistema feito sobmedida para resolver os problemas
                          do seu negócio aumenta a produtividade e permite que 
-                         vocÊ foque seus esforços no que realmente importa. 
+                         você foque seus esforços no que realmente importa. 
                         
                     </P>
                    
