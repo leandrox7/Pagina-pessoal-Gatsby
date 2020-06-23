@@ -37,7 +37,7 @@ padding-top:50px;
 padding-left:50px;
 background-color:none;
 `
-const Text = styled.a`
+const Text = styled.div`
 text-decoration:none;
   color: #707070;
   font-family: 'Segoe UI';
@@ -57,11 +57,10 @@ const Header = ({ siteTitle }) => (
         <Logo/>
       </BoxL>
       <BoxR>
-      <Link to="/"><Text href='#home'>Home</Text></Link>
-        
-        <Text href='#tecnologia'>Tecnologia</Text>
-        <Text href='#sobre'>Sobre</Text>
-        <Link to="/contato"><Text>Contato</Text></Link>
+      <Link to="/"><Text >Home</Text></Link>
+      <Link to="/#tecnologia"><Text >Tecnologia</Text></Link>
+      <Link to="/#sobre"><Text >Sobre</Text></Link>
+       <Link to="/contato"><Text>Contato</Text></Link>
       </BoxR>
      
     </Container>

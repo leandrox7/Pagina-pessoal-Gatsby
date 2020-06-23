@@ -1,3 +1,6 @@
+
+
+
 module.exports = {
   siteMetadata: {
     title: ``,
@@ -5,6 +8,7 @@ module.exports = {
     author: `@leandrox7`,
   },
   plugins: [
+
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -34,6 +38,10 @@ module.exports = {
         cookieDomain: "example.com",
       },
     },
+
+    `gatsby-plugin-styled-components`,
+
+
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

@@ -12,10 +12,11 @@ import Sobre from "../components/sobre"
 const IndexPage = () => (
   <Layout >
     <SEO title="Leandro Rodrigues" />
-    <Hero />
+   <Hero />
     <Motivo/>
     <Solucoes/>
     <Opcoes/>
+    
     <Sobre/>
     <Footer/>
    
