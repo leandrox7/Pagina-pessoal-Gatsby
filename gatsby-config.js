@@ -8,7 +8,6 @@ module.exports = {
     author: `@leandrox7`,
   },
   plugins: [
-
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -31,14 +30,14 @@ module.exports = {
         // Set Variation ID. 0 for original 1,2,3....
         variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
         // Defers execution of google analytics script after page load
-        defer: false,
+        defer: true,
         // Any additional optional fields
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: "example.com",
+        cookieDomain: "lrodrigues.site",
       },
     },
-
+  
     `gatsby-plugin-styled-components`,
 
 
