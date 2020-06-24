@@ -93,11 +93,11 @@ class ContatoPage extends React.Component {
         nome: this.state.nome, email: this.state.email, assunto: this.state.assunto, mensagem:this.state.mensagem})
       .then(function (response) {
         console.log(response);
-        alert('deu bom');
+        alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');
       })
       .catch(function (error) {
         console.log(error);
-        alert('deu ruim');
+        alert('Houve um problema no envio da menssagem, verifique os dados e a sua conexão com a internet');
       });
   }
 
