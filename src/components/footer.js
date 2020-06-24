@@ -12,7 +12,8 @@ const Center = styled.div`
 margin-left:auto;
 margin-right:auto;
 width:250px;
-height:200px;
+height:18vh;
+min-height:80px;
 text-align:center;
 align-items: center;
 display: flex;

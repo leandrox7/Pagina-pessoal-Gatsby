@@ -12,6 +12,7 @@ margin-left:auto;
 margin-right:auto;
 background-color:none;
 width:500px;
+min-height:82vh;
 `
 const Form = styled.form`
 padding-top:40px;
