@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Footer from "../components/footer"
 import styled from 'styled-components'
 import Container from '../components/container'
 const axios = require('axios');
@@ -13,6 +12,7 @@ margin-left:auto;
 margin-right:auto;
 background-color:none;
 width:500px;
+min-height:82vh;
 `
 const Form = styled.form`
 padding-top:40px;
@@ -93,11 +93,11 @@ class ContatoPage extends React.Component {
         nome: this.state.nome, email: this.state.email, assunto: this.state.assunto, mensagem:this.state.mensagem})
       .then(function (response) {
         console.log(response);
-        alert('deu bom');
+        alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');
       })
       .catch(function (error) {
         console.log(error);
-        alert('deu ruim');
+        alert('Houve um problema no envio da menssagem, verifique os dados e a sua conexão com a internet');
       });
   }
 
@@ -136,8 +136,6 @@ class ContatoPage extends React.Component {
                 </Form>
             </Box>
         </Container>
-
-        <Footer />
     </Layout>)
   }
 }
