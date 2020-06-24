@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: ``,
-    description: `Minha página pessoal`,
-    author: `@leandrox7`,
+    title: `Leandro Rodrigues Desenvolvimento de Sistemas`,
+    description: `Criação de sites, sistemas web e eCommerce WordPress. Soluções em .NET Core, PHP, React.js, Node.js e WordPress`,
+    author: `https://www.linkedin.com/in/leandro-rodrigues-b3014b162/`,
+    siteURL: 'https://lrodrigues.site/',
+    siteName: 'Leandro Rodrigues',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
