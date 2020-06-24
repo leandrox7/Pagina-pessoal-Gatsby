@@ -1,8 +1,8 @@
 import React from "react"
 import styled from 'styled-components'
-import image1 from '../images/slide1.png'
-import image2 from '../images/slide2.png'
-import image3 from '../images/logo-grande.png'
+import Image1 from '../components/image-slide1'
+import Image2 from '../components/image-slide2'
+import Image3 from '../components/image-slide3'
 import  './slide.css'
 import { Slide } from 'react-slideshow-image';
 
@@ -20,48 +20,27 @@ const properties = {
 }
  
 const Slideshow = () => {
-  function componetDidMount(){
-    
-  }
+  
     return (
       <div className="slide-container">
        
-        <Slide {...properties}>
+       <Slide {...properties}>
           <div className="each-slide">
-          <Image src={image1}></Image>
+          < Image1 />
           </div>
           <div className="each-slide">
-          <Image src={image2}></Image>
+          <Image2 />
           </div>
           <div className="each-slide">
-          <Image src={image3}></Image>
+          <Image3 />
           </div>
         </Slide>
       </div>
     )
 }
 
-const Section = styled.section`
-width:80%;
-margin-left:auto;
-margin-right:auto;
-`
-const Image = styled.img`
-width:500px;
-height:auto;
-display: block;
-margin-left: auto;
-margin-right: auto;
-`
-function slide(){
 
-        return(
-            <Section>
-                <Image src={image1}></Image>
-            </Section>
-       
-        )
-    
-}
+
+
   
 export default Slideshow

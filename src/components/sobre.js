@@ -1,6 +1,6 @@
 import React from "react"
 import styled from 'styled-components'
-import foto from '../images/leandro.png'
+import Foto from '../components/image-sobre'
 import Container from '../components/container'
 
 const Section = styled.section`
@@ -30,29 +30,6 @@ display: inline-block;
     max-width: 275px;
     vertical-align: top;
     `
-const Strong = styled.strong`
-  font-family: 'Segoe UI';
-  font-style: black;
-  font-size:20px ;
-  font-weight:900;
-  max-width: 500px;
-  line-height: 1.42857;
-  color:rebeccapurple;
-  vertical-align: top;
-    
-`
-const P = styled.p`
-font-family: 'Segoe UI';
-  font-style: medium;
-  font-size:12px ;
-    color: #666;
-    margin-bottom: 12px;
-    padding: 0 3px;
-    text-align:justify;
-    line-height: 1.6;`
-const Span = styled.span`
-    font-size: 14px;
-    color: #999;`
 const Center = styled.div`
 
 margin-left: auto;
@@ -61,12 +38,6 @@ width: 100%;
 text-align:center;
 display:inline-block;
 padding-bottom:80px;
-`
-const Imagem = styled.img`
-    margin-top:10vh;
-    border-radius: 50%;
-    width:200px;
-    height:200px;
 `
 const Texto1 = styled.div`
 color: #707070;
@@ -105,15 +76,16 @@ function sobre() {
 
             <Container>
 <Center>
-<Imagem src={foto} alt="Fotografia do desenvolvedor" />
-
-<Texto3>
+<Foto />
+<div style={{marginTop:"20px"}}>
+    <Texto3>
     Leandro Rodrigues
 </Texto3>
 
 <Texto3>
     Estudante de Ciência da Computação - UFRGS
-</Texto3>
+</Texto3></div>
+
 
 </Center>
 

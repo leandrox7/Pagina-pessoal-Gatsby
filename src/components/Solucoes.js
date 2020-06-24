@@ -1,7 +1,7 @@
 import React from "react"
 import styled from 'styled-components'
 import background from '../images/solucoes.jpg'
-import Container from '../components/container'
+
 
 
 const Section = styled.section`
@@ -10,15 +10,7 @@ max-width:1900px;
 max-height:90vh;
 margin-left: auto;
 margin-right: auto;
-
-
-   `
-const Filtro = styled.div`
-
-    background-color: rgba(88, 83, 239, 0.5);
-    height: 105vh;
-    max-width: 100vw;
-    `
+`
 const BoxLeft = styled.div`
 width:50%;
 height:90vh;
@@ -55,27 +47,7 @@ const Texto2 = styled.div`
     font-size:1.2rem;   
     line-height:1.1;
     max-width: 90%;`
-const Texto3 = styled.div`
-   color:whitesmoke;
-    font-family: 'Segoe UI';
-    font-style: black;
-    font-size:1.5rem ;   
-    max-width: 35vw;`
-const BoxUl = styled.div`
- padding-top: 10px;
-`
-const Ul = styled.ul`
-list-style-type: circle;
-color: whitesmoke;
-`
-const Li = styled.li`
- margin-top: 20px;
-`
 
-const Logo = styled.img`
-width:130px;
-height:130px;
-`
 function Solucoes() {
     return (
         <Section>

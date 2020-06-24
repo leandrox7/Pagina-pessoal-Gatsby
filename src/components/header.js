@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from 'styled-components'
-import logo from '../images/LogoAzul.png'
+import Logo from '../components/image-mini-logo'
 import Container from '../components/container'
 
 
@@ -25,6 +25,7 @@ const BoxL = styled.div`
 display:inline-block;
 width:20%;
 background-color:none;
+padding-top: 20px;
 `
 const BoxR = styled.div`
 scroll-behavior: smooth;
@@ -46,17 +47,14 @@ text-decoration:none;
   margin-right:94px;
   display:inline-block;
 `
-const Imagem = styled.img`
-padding-top:20px;
-display:inline-block;
-`
+
 
 const Header = ({ siteTitle }) => (
   <Navbar>
     <Container>
 
       <BoxL>
-        <Imagem src={logo}></Imagem>
+        <Logo/>
       </BoxL>
       <BoxR>
       <Link to="/"><Text >Home</Text></Link>

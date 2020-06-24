@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
@@ -110,20 +109,20 @@ class ContatoPage extends React.Component {
 
                 <Form method="post" onSubmit={this.handleSubmit}>
                     <Line>
-                        <Label> Nome</Label>
+                        <Label for='nome'> Nome</Label>
                         <Input type="text" name="nome" id="nome" placeholder="José Carlos" onChange={this.myChangeHandler}/></Line>
                     <Line>
-                        <Label> Email</Label>
+                        <Label for='email'> Email</Label>
                         <Input type="email" name="email" id="email" placeholder="seu-email@mail.com" onChange={this.myChangeHandler}/>
                     </Line>
 
                     <Line> 
-                        <Label>Assunto</Label>
+                        <Label for='assunto'>Assunto</Label>
                         <Input type="text" name="assunto" id="assunto" placeholder="Selecione um assunto..." onChange={this.myChangeHandler} />
                     </Line>
 
                     <Line>
-                        <Label> Mensagem</Label>
+                        <Label for='mensagem'> Mensagem</Label>
                         <TextArea name="mensagem" id="mensagem" rows="2" placeholder="Escreva sua mensagem aqui" onChange={this.myChangeHandler} />
                     </Line>
                     <Line>
