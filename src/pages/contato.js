@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Footer from "../components/footer"
 import styled from 'styled-components'
 import Container from '../components/container'
 const axios = require('axios');
@@ -136,8 +135,6 @@ class ContatoPage extends React.Component {
                 </Form>
             </Box>
         </Container>
-
-        <Footer />
     </Layout>)
   }
 }
