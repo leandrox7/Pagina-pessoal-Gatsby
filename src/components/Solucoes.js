@@ -2,8 +2,6 @@ import React from "react"
 import styled from 'styled-components'
 import background from '../images/solucoes.jpg'
 
-
-
 const Section = styled.section`
 width: 100%;
 max-width:1900px;
@@ -18,6 +16,18 @@ padding-left:10vw;
 padding-top: 10vh;
 display:inline-block;
 vertical-align: top;
+
+height:90vh;
+
+
+ /* Telefones em paisagem e abaixo */
+ @media (max-width: 480px) { 
+   
+   width:90%;
+   margin-left:5%;
+margin-right:5%;
+  
+}
 `
 const BoxRight = styled.div`
     width:50%;
@@ -30,13 +40,18 @@ const BoxRight = styled.div`
     max-height:1000px;
     display:inline-block;
     vertical-align: top;
+       /* Telefones em paisagem e abaixo */
+@media (max-width: 480px) { 
+   
+    display:none;
+   
+ }
      `
 const Texto1 = styled.div` 
 color:rebeccapurple;
 font-family: 'Segoe UI';
 font-size:3.0rem ;
 font-weight:900;
-
 line-height:1.1;
 `
 const Texto2 = styled.div`

@@ -20,6 +20,14 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
+
+ /* Telefones em paisagem e abaixo */
+ @media (max-width: 480px) { 
+   
+  width:100%;
+  height:80px;
+  
+}
 `
 const A = styled.a`
 margin-right:10px;`
@@ -27,6 +35,7 @@ function footer() {
 
     return (  
         <Section>
+          
                 <Container> 
                   <Center>
                     <A href='https://www.linkedin.com/in/leandro-rodrigues-b3014b162/' target="_blank"><Linkedin/></A>
