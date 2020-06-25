@@ -2,9 +2,22 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from 'styled-components'
-import Container from '../components/container'
 const axios = require('axios');
 
+const Container = styled.div`
+width: 80%;
+max-width:1100px;
+margin-left: auto;
+margin-right: auto;
+
+ /* Telefones em paisagem e abaixo */
+ @media (max-width: 480px) { 
+   
+   width:98vw;
+  
+}
+
+`
 const color = '#f2f2f2';
 const Box = styled.div`
 padding-top:150px;
@@ -13,12 +26,25 @@ margin-right:auto;
 background-color:none;
 width:500px;
 min-height:82vh;
+ /* Telefones em paisagem e abaixo */
+ @media (max-width: 480px) { 
+   
+   max-width:95%;
+  
+}
 `
 const Form = styled.form`
 padding-top:40px;
 border: 2px solid ${color};
 padding-left: 40px;
 padding-right: 40px;
+
+ /* Telefones em paisagem e abaixo */
+ @media (max-width: 480px) { 
+   
+  padding-left: 30px;
+padding-right: 30px;
+}
 `
 const Label = styled.label`
 color: #707070;
@@ -28,12 +54,17 @@ font-size:1rem ;
 font-weight:400;
 line-height:3.1;
 vertical-align:middle;
-
-
 `
 const TextArea= styled.textarea`
 width:415px;
-margin-top:10px;`
+margin-top:10px;
+
+ /* Telefones em paisagem e abaixo */
+ @media (max-width: 480px) { 
+   
+   width:100%;
+   
+ }`
 const Input = styled.input`
 margin-left:auto;
 float: right;
@@ -43,6 +74,13 @@ box-sizing: border-box;
 border: none;
 border-bottom: 2px solid ${color};
 font-family: 'Segoe UI';
+
+ /* Telefones em paisagem e abaixo */
+ @media (max-width: 480px) { 
+  
+  width:76%;
+  
+}
 `
 const Line = styled.div`
 display:block;
@@ -66,6 +104,23 @@ border-style:none;
 border-radius:3px;
 `
 
+const Text = styled.h1`
+color: #707070;
+font-family: 'Segoe UI';
+font-style: black;
+font-size:2rem ;
+font-weight:400;
+line-height:1;
+vertical-align:middle;
+
+ /* Telefones em paisagem e abaixo */
+ @media (mIN-width: 480px) { 
+   
+   display:none;
+  
+}
+
+`
 
 
 
@@ -108,6 +163,9 @@ class ContatoPage extends React.Component {
             <Box>
 
                 <Form method="post" onSubmit={this.handleSubmit}>
+                  <Line>
+                    <Text>Entre em contato!</Text>
+                  </Line>
                     <Line>
                         <Label for='nome'> Nome</Label>
                         <Input type="text" name="nome" id="nome" placeholder="José Carlos" onChange={this.myChangeHandler}/></Line>
