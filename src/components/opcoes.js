@@ -27,14 +27,26 @@ const Li = styled.li`
 
 display: inline-block;
     max-width: 275px;
-    vertical-align: top;`
+    vertical-align: top;
+    
+       /* Telefones em paisagem e abaixo */
+@media (max-width: 480px) { 
+    margin-bottom:50px;
+    
+ }
+ `
 const Strong = styled.strong`
   font-family: 'Segoe UI';
   font-style: black;
   font-size:40px ;  
   font-weight:800; 
-    color:rebeccapurple;
-   
+  color:rebeccapurple;
+  max-width:90vw;
+   /* Telefones em paisagem e abaixo */
+@media (max-width: 480px) { 
+    font-size:20px;
+    
+ }
     
 `
 const P = styled.p`
@@ -48,7 +60,7 @@ font-size: 18px;
 const Center = styled.div`
 margin-left: auto;
 margin-right: auto;
-width: 1000px;
+width: 100%;
 text-align:center;
 `
 
@@ -61,7 +73,7 @@ function opcoes() {
         <Section name='tecnologia'>
 
             <Container>
-<Center>
+            <Center>
     <Strong>Soluçoes personalizadas para você</Strong>
 </Center>
 

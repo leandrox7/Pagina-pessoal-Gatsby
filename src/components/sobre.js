@@ -25,10 +25,11 @@ const Ul = styled.ul`
     text-align: center;
 `
 const Li = styled.li`
-
-display: inline-block;
+    display: inline-block;
     max-width: 275px;
     vertical-align: top;
+    margin-bottom:40px;
+
     `
 const Center = styled.div`
 
@@ -72,47 +73,46 @@ function sobre() {
 
     return (
 
-        <Section  name='sobre'>
+        <Section name='sobre'>
 
             <Container>
-<Center>
-<Foto />
-<div style={{marginTop:"20px"}}>
-    <Texto3>
-    Leandro Rodrigues
-</Texto3>
+                <Center>
+                    <Foto />
+                    <div style={{ marginTop: "20px" }}>
+                        <Texto3>
+                            Leandro Rodrigues
+                        </Texto3>
 
-<Texto3>
-    Estudante de Ciência da Computação - UFRGS
-</Texto3></div>
+                        <Texto3>
+                            Estudante de Ciência da Computação - UFRGS
+                        </Texto3>
+                    </div>
+                </Center>
 
-
-</Center>
-
-            <Ul>
-                <Li>
-                    <Texto1>GRADUAÇÃO</Texto1>
-                    <Texto2>O curso de Ciência da Computação objetiva formar profissionais
-                            qualificados para planejar, projetar, desenvolver, implantar e
-                            gerenciar sistemas de computação, abrangendo desde soluções simples 
+                <Ul>
+                    <Li>
+                        <Texto1>GRADUAÇÃO</Texto1>
+                        <Texto2>O curso de Ciência da Computação objetiva formar profissionais
+                        qualificados para planejar, projetar, desenvolver, implantar e
+                        gerenciar sistemas de computação, abrangendo desde soluções simples
                             com computadores pessoais até redes corporativas complexas.</Texto2>
-                   
-                </Li>
 
-                <Li>
-                    <Texto1>EXPERIÊNCIA PROFISSIONAL</Texto1>
-                    <Texto2> <b>Decision IT -</b> Desenvolvimento e manutenção de sistemas em C# utilizando ASP.NET, 
+                    </Li>
+
+                    <Li>
+                        <Texto1>EXPERIÊNCIA PROFISSIONAL</Texto1>
+                        <Texto2> <b>Decision IT -</b> Desenvolvimento e manutenção de sistemas em C# utilizando ASP.NET,
                              criação e manutenção de consultas para Oracle e SQL Server.
-                             <br/><b>IDE JR -</b> Desenvolvimento de websites utilizando Node.js, PHP e Wordpress. </Texto2>
-                    
-                </Li>
+                             <br /><b>IDE JR -</b> Desenvolvimento de websites utilizando Node.js, PHP e Wordpress. </Texto2>
 
-                <Li>
-                    <Texto1>TECNOLOGIAS</Texto1>
-                    <Texto2> Framework .NET e .NET Core, React.js e PHP</Texto2>
-                 
-                </Li>
-            </Ul>
+                    </Li>
+
+                    <Li>
+                        <Texto1>TECNOLOGIAS</Texto1>
+                        <Texto2> Framework .NET e .NET Core, React.js e PHP</Texto2>
+
+                    </Li>
+                </Ul>
             </Container>
         </Section>
 

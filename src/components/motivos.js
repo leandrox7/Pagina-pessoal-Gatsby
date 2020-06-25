@@ -9,6 +9,7 @@ const Center = styled.div`
     margin-left: auto;
     margin-right: auto;
     width: 600px;
+    max-width:90vw;
     text-align:center;
     `
 const Title = styled.h2`
@@ -16,17 +17,20 @@ const Title = styled.h2`
 padding-bottom: 20px;
 font-weight: 100;
 line-height: 1.1;
-
+max-width: 90%;
 color: #444;
     ::after{
         content: '';
+        width: 300px;
+       
         position: absolute;
         left: 50%;
         margin-top: 55px;
-        width: 300px;
+        
         height: 1px;
         margin-left: -150px;
         background: rebeccapurple;
+       
     };
 
 `
@@ -49,8 +53,16 @@ margin: 0 auto;
 const Li = styled.li`
 
 display: inline-block;
-    max-width: 275px;
-    vertical-align: top;`
+max-width: 275px;
+vertical-align: top; 
+ margin-right:auto;
+    margin-left:auto;
+    margin-bottom:40px;
+ /* Telefones em paisagem e abaixo */
+ @media (max-width: 480px) { 
+ 
+}
+`
 const Strong = styled.strong`
 font-size: 45px;
     font-weight: 400;

@@ -6,10 +6,10 @@ import Logo from '../components/image-mini-logo'
 import Container from '../components/container'
 
 
-const Navbar = styled.header`
+const Navbarx = styled.header`
 position:fixed;
 background-color:white;
-width:100%;
+width:100vw;
 z-index: 20;
 `
 const Line = styled.div`
@@ -26,6 +26,12 @@ display:inline-block;
 width:20%;
 background-color:none;
 padding-top: 20px;
+ /* Telefones em paisagem e abaixo */
+ @media (max-width: 480px) { 
+   
+  width:90%;
+  
+}
 `
 const BoxR = styled.div`
 scroll-behavior: smooth;
@@ -36,6 +42,12 @@ vertical-align: top;
 padding-top:50px;
 padding-left:50px;
 background-color:none;
+ /* Telefones em paisagem e abaixo */
+ @media (max-width: 480px) { 
+   
+   display:none;
+  
+}
 `
 const Text = styled.div`
 text-decoration:none;
@@ -50,7 +62,7 @@ text-decoration:none;
 
 
 const Header = ({ siteTitle }) => (
-  <Navbar>
+  <Navbarx>
     <Container>
 
       <BoxL>
@@ -65,7 +77,7 @@ const Header = ({ siteTitle }) => (
      
     </Container>
     <Line/>
-  </Navbar>
+  </Navbarx>
 )
 
 Header.propTypes = {
